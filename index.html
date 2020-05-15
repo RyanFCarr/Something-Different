@@ -54,7 +54,8 @@
           <label class="label">Hobbies</label>
           <p class="control">
             <span class="select">
-              <select>
+              <select id="hobbyDropdown">
+                <option>Select</option>
                 <option>Biking</option>
                 <option>Fishing</option>
                 <option>Board Games</option>
@@ -72,14 +73,17 @@
         <div class="column is-6">
           <div class="card">
             <div class="card-content">
-              <p class="title">
+              <p id="hobbyName" class="title">
                 Wikipedia text about the hobby selected will go here.
+              </p>
+              <p id="summaryText">
+
               </p>
             </div>
             <footer class="card-footer">
               <p class="card-footer-item">
                 <span>
-                  View the article on <a href="">Wikipedia</a>
+                  View the article on <a id="wikiLink" target="_blank" href="">Wikipedia</a>
                 </span>
               </p>
             </footer>
