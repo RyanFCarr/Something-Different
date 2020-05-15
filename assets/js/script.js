@@ -1,6 +1,6 @@
 var hobby = "";
 
-$("#hobbyDropdown").change(function(){
+$("#hobbyDropdown").on("change", function(){
     
     var hobbyName = $(this).find("option:selected").text()
     console.log($(this))
@@ -14,7 +14,7 @@ $("#hobbyDropdown").change(function(){
     wikiData(hobbyName)
 })
 
-$("#searchForm").submit(function(event) {
+$("#searchForm").on("submit", function(event) {
     event.preventDefault()
     var hobbyName = $("#hobbySearchInput").val()
 
