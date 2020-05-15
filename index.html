@@ -40,21 +40,24 @@
     <!-- Input form with search button attached -->
     
     <div class="block">
-      <form>
+      <form id="searchForm">
         <div class="field has-addons">
-          <p class="control">
-            <input type="text" class="input" placeholder="Search a hobby">
-          </p>
-          <p class="control">
-            <a href="" class="button is-info">Search</a>
-          </p>
-        </div>
+          <form>
+            <p class="control">
+              <input id="hobbySearchInput" type="text" class="input" placeholder="Search a hobby">
+            </p>
+            <p class="control">
+              <button id="hobbySearchButton" type="submit" class="button is-info">Search</button>
+            </p>
+          </form>
+          </div>
         <!-- Dropdown with basic hobbies -->
         <div class="field">
           <label class="label">Hobbies</label>
           <p class="control">
             <span class="select">
-              <select>
+              <select id="hobbyDropdown">
+                <option>Select</option>
                 <option>Biking</option>
                 <option>Fishing</option>
                 <option>Board Games</option>
@@ -72,14 +75,17 @@
         <div class="column is-6">
           <div class="card">
             <div class="card-content">
-              <p class="title">
-                Wikipedia text about the hobby selected will go here.
+              <p id="hobbyName" class="title">
+                Hobby Information
+              </p>
+              <p id="summaryText">
+
               </p>
             </div>
             <footer class="card-footer">
               <p class="card-footer-item">
                 <span>
-                  View the article on <a href="">Wikipedia</a>
+                  View the article on <a id="wikiLink" target="_blank" href="">Wikipedia</a>
                 </span>
               </p>
             </footer>
