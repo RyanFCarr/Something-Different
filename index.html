@@ -40,15 +40,17 @@
     <!-- Input form with search button attached -->
     
     <div class="block">
-      <form>
+      <form id="searchForm">
         <div class="field has-addons">
-          <p class="control">
-            <input type="text" class="input" placeholder="Search a hobby">
-          </p>
-          <p class="control">
-            <a href="" class="button is-info">Search</a>
-          </p>
-        </div>
+          <form>
+            <p class="control">
+              <input id="hobbySearchInput" type="text" class="input" placeholder="Search a hobby">
+            </p>
+            <p class="control">
+              <button id="hobbySearchButton" type="submit" class="button is-info">Search</button>
+            </p>
+          </form>
+          </div>
         <!-- Dropdown with basic hobbies -->
         <div class="field">
           <label class="label">Hobbies</label>
@@ -74,7 +76,7 @@
           <div class="card">
             <div class="card-content">
               <p id="hobbyName" class="title">
-                Wikipedia text about the hobby selected will go here.
+                Hobby Information
               </p>
               <p id="summaryText">
 

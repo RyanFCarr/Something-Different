@@ -14,7 +14,17 @@ $("#hobbyDropdown").change(function(){
     wikiData(hobbyName)
 })
 
+$("#searchForm").submit(function(event) {
+    event.preventDefault()
+    var hobbyName = $("#hobbySearchInput").val()
 
+    if (hobbyName !== null) {
+        
+        wikiData(hobbyName)
+    }
+
+    $("#hobbySearchInput").empty()
+})
 
 
 
