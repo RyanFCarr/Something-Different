@@ -1,6 +1,6 @@
 
 //Define Vars
-const API = "";
+const API = "AIzaSyBDK2VHhtEqbf7JmtTWtimBN8Psx7sYBaw";
 var query = "";
 var youLink = "http://youtube.com/watch?v=";
 var player;
@@ -59,9 +59,8 @@ function embedVideo(video) {
     window.player.cueVideoById(video.id.videoId, 0)
   } else {
     window.player = new YT.Player('player', {
-      height: '400',
-      width: '600',
       videoId: video.id.videoId,
     });
+    $("#player").addClass("has-ratio")
   }
 }
