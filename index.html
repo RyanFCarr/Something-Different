@@ -2,11 +2,14 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Something Different</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Something Different</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <!-- !!added link for carousel!! -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 </head>
 
 <body>
@@ -26,19 +29,32 @@
           from work and search for a new hobby!</h1>
       </div>
     </div>
-    
-    <!-- jumbotron type thing. will be placeholder til we have carousel -->
-    <div class="block">
-      <section class="hero is-info">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">Placeholder for carousel</h1>
+    <!-- Carousel that has issues. Buttons freeze. -->
+    <section class="section">
+      <div class="container">
+        <div id="carousel" class="carousel" data-infinite="true">
+          <div class="item-1">
+            <img src="./assets/image/bikeimg1.jpg" alt="Biking">
+          </div>
+          <div class="item-2">
+            <img src="./assets/image/fishing1.jpg" alt="Fishing">
+          </div>
+          <div class="item-3">
+            <img src="./assets/image/boardgame1.jpg" alt="Boardgames">
+          </div>
+          <div class="item-4">
+            <img src="./assets/image/astronomy1.jpg" alt="Astronomy">
+          </div>
+          <div class="item-5">
+            <img src="./assets/image/running1.jpg" alt="Running">
+          </div>
+          <div class="item-6">
+            <img src="./assets/image/surfing.jpg" alt="Surfing">
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <!-- Input form with search button attached -->
-    
     <div class="block">
       <form id="searchForm">
         <div class="field has-addons">
@@ -62,13 +78,14 @@
                 <option>Fishing</option>
                 <option>Board Games</option>
                 <option>Astronomy</option>
+                <option>Running</option>
+                <option>Surfing</option>
               </select>
             </span>
           </p>
         </div>
       </form>
     </div>
-    
     <!-- Wiki content will go here -->
     <div class="block">
       <div class="columns">
@@ -87,7 +104,7 @@
             </footer>
           </div>
         </div>
-        
+
         <!-- Placeholder for where we will attempt to embed youtube video -->
         <div class="column is-6">
           <div class="card">
@@ -111,8 +128,21 @@
   </div>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="https://apis.google.com/js/api.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- script soure for carousesl -->
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+  <!-- js for carousel -->
+  <script>
+    bulmaCarousel.attach('#carousel', {
+      slidesToScroll: 1,
+      slidesToShow: 2
+    });
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/youtube.js"></script>
 </body>
+
 </html>
