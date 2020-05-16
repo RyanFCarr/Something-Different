@@ -92,12 +92,8 @@
         <div class="column is-6">
           <div class="card">
             <div class="card-content">
-              <p id="hobbyName" class="title">
-                Hobby Information
-              </p>
-              <p id="summaryText">
-
-              </p>
+              <p id="hobbyName" class="title">Hobby Information</p>
+              <p id="summaryText"></p>
             </div>
             <footer class="card-footer">
               <p class="card-footer-item">
@@ -115,7 +111,8 @@
             <div class="card-content">
               <p class="title">
                 Placeholder for embedded youtube vids
-              </p>
+			  </p>
+			  <div id="player"></div>
             </div>
             <footer class="card-footer">
               <p class="card-footer-item">
@@ -129,9 +126,10 @@
       </div>
     </div>
   </div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
   <!-- script soure for carousesl -->
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-  
   <!-- js for carousel -->
   <script>
     bulmaCarousel.attach('#carousel', {
