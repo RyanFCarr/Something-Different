@@ -59,9 +59,8 @@ function embedVideo(video) {
     window.player.cueVideoById(video.id.videoId, 0)
   } else {
     window.player = new YT.Player('player', {
-      height: '400',
-      width: '600',
       videoId: video.id.videoId,
     });
+    $("#player").addClass("has-ratio")
   }
 }
