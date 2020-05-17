@@ -1,5 +1,5 @@
 # Something-Different
 
-An app which will suggest and offer assistance to someone is looking to try something different based on both past and modern hobbies.
+An app which suggests and offers assistance to those who may be in search of a new hobby.
 
 
