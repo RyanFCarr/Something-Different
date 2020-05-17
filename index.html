@@ -10,6 +10,7 @@
   <!-- !!added link for carousel!! -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -22,14 +23,13 @@
         <!-- </div> -->
       </div>
     </div>
+    <hr>
     <!-- blurb about what the site is -->
-    <div class="block">
-      <div class="box">
-        <h1 class="subtitle">Why don't you spend your time more wisely and learn a new hobby? Make use of your time away
-          from work and search for a new hobby!</h1>
-      </div>
+    <div class="block has-text-centered">
+      <h1 class="subtitle">Why don't you spend your time more wisely and learn a new hobby? Make use of your time away
+        from work and search for a new hobby!</h1>
     </div>
-    <!-- Carousel that has issues. Buttons freeze. -->
+    <!-- Infinite carousel -->
     <section class="section">
       <div class="container">
         <div id="carousel" class="carousel" data-infinite="true">
@@ -114,7 +114,7 @@
           </div>
         </div>
 
-        <!-- Placeholder for where we will attempt to embed youtube video -->
+        <!-- Youtube video will go here -->
         <div class="column is-6">
           <div class="card">
             <div class="card-content">
@@ -140,10 +140,22 @@
       </div>
     </div>
   </div>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="https://apis.google.com/js/api.js"></script>
+  <br>
+  <!-- Basic Footer. Names are links to github profiles -->
+  <footer class="footer" id="mainFooter">
+    <div class="content has-text-centered">
+      <p>
+        <strong class="subtitle">Something Different</strong> by <a href="https://github.com/thomasjrideriii">Thomas
+          Rider</a>, <a href="https://github.com/Savage1005">Tom Savage</a>, <a href="https://github.com/RyanFCarr">Ryan
+          Carr</a> and <a href="https://github.com/Bmcart3">Ben Cart</a>.
+      </p>
+    </div>
+  </footer>
   <!-- script soure for carousesl -->
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
   <!-- js for carousel -->
   <script>
     bulmaCarousel.attach('#carousel', {
