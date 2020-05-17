@@ -1,0 +1,16 @@
+body {
+   background-image: linear-gradient(white, rgb(173, 216, 230));
+  }
+
+#mainFooter{
+    background-color: transparent;
+    padding-bottom: 1rem;
+}
+
+.card{
+    background-color: transparent;
+}
+
+.nav {
+    padding-top: 1rem;
+}
