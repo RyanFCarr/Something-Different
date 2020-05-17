@@ -1,10 +1,8 @@
 var hobby = "";
 
-$("#hobbyDropdown").change(function(){
+$("#hobbyDropdown").on("change", function(){
     
     var hobbyName = $(this).find("option:selected").text()
-    console.log($(this))
-    console.log(hobbyName)
 
     if (hobbyName === "Select") {
         var hobbyName = "Hobby"
@@ -14,7 +12,7 @@ $("#hobbyDropdown").change(function(){
     wikiData(hobbyName)
 })
 
-$("#searchForm").submit(function(event) {
+$("#searchForm").on("submit", function(event) {
     event.preventDefault()
     var hobbyName = $("#hobbySearchInput").val()
 
@@ -39,14 +37,10 @@ function wikiData(hobbyName) {
     url: queryURL + hobbyName + "&origin=*",
     method: "GET",
   }).then(function (result) {
-    console.log(result)
-    // console.log(result.query.pages)
-    // console.log(Object.keys(result.query.pages))
+
     var pageNum = Object.keys(result.query.pages);
-    // console.log(result.query.pages[pageNum[0]])
     var summaryText = result.query.pages[pageNum[0]].extract;
     var pageLink = result.query.pages[pageNum[0]].canonicalurl;
-    console.log(summaryText)
     $("#wikiLink").attr("href", pageLink);
     $("#hobbyName").text(hobbyName)
     $("#summaryText").text(summaryText);
