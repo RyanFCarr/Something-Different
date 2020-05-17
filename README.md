@@ -28,3 +28,4 @@ This project was assigned as a first group project in a FullStack Development Bo
 The following APIs were used in the development of this assignment.
 
 * **YouTube API** - (https://developers.google.com/youtube/v3/)
+* **MediaWiki API** - (https://www.mediawiki.org/wiki/API:Main_page)
