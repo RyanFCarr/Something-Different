@@ -13,6 +13,14 @@ This project was assigned as a first group project in a FullStack Development Bo
 * **Tom Savage** - [Savage1005](https://github.com/Savage1005)
 * **Ryan Carr** - [RyanFCarr](https://github.com/RyanFCarr)
 
+## Technologies
+
+<b>Built with</b>
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)
+
 ## API Reference:
 
 The following APIs were used in the development of this assignment.
