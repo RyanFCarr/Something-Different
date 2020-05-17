@@ -18,7 +18,7 @@
     <div class="nav" role="navigation" aria-label="main navigation">
       <!-- <div class="navbar-brand"> -->
       <div class="nav-center">
-        <h1 class="title has-text-centered">Something Different</h1>
+        <h1 class="title has-text-centered" style="font-size:48px;">Something Different</h1>
         <!-- </div> -->
       </div>
     </div>
@@ -66,7 +66,7 @@
               <button id="hobbySearchButton" type="submit" class="button is-info">Search</button>
             </p>
           </form>
-          </div>
+        </div>
         <!-- Dropdown with basic hobbies -->
         <div class="field">
           <label class="label">Hobbies</label>
@@ -122,6 +122,10 @@
                  YouTube Video of your Hobby:
               </p>
               <hr>
+              <span class="image is-16by9">
+                <div id="player"></div>
+              </span>
+              
             </div>
             <footer class="card-footer">
               <p class="card-footer-item">
@@ -129,15 +133,17 @@
                   View the video on <a href="">YouTube  <i class="fab fa-youtube"></i></a>
                 </span>
               </p>
+              
             </footer>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
   <!-- script soure for carousesl -->
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-  
   <!-- js for carousel -->
   <script>
     bulmaCarousel.attach('#carousel', {
