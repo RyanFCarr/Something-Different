@@ -14,3 +14,16 @@ body {
 .nav {
     padding-top: 1rem;
 }
+
+#dropTitle {
+    padding-right: 4.5rem;
+    padding-bottom: 1rem;
+}
+
+#mountainFav {
+    padding-right: .5rem;
+}
+
+#firstBreak {
+    background-color: lightblue;
+}
