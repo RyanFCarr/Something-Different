@@ -62,6 +62,6 @@ function embedVideo(video) {
     window.player = new YT.Player('player', {
       videoId: video.id.videoId,
     });
-    $("#player").addClass("has-ratio")
+    $("#player").addClass("has-ratio").parent().addClass('image')
   }
 }
