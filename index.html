@@ -29,31 +29,34 @@
       <h1 class="subtitle">Why don't you spend your time more wisely and learn a new hobby? Make use of your time away
         from work and search for a new hobby!</h1>
     </div>
+  
     <!-- Infinite carousel -->
     <section class="section">
       <div class="container">
         <div id="carousel" class="carousel" data-infinite="true">
           <div class="item-1">
-            <img src="./assets/image/bikeimg1.jpg" alt="Biking">
+            <img id="biking" src="./assets/image/bikeimg1.jpg" alt="Biking">
           </div>
           <div class="item-2">
-            <img src="./assets/image/fishing1.jpg" alt="Fishing">
+            <img id="fishing" src="./assets/image/fishing1.jpg" alt="Fishing">
           </div>
           <div class="item-3">
-            <img src="./assets/image/boardgame1.jpg" alt="Boardgames">
+            <img id="boardgames" src="./assets/image/boardgame1.jpg" alt="Boardgames">
           </div>
           <div class="item-4">
-            <img src="./assets/image/astronomy1.jpg" alt="Astronomy">
+            <img id="astronomy" src="./assets/image/astronomy1.jpg" alt="Astronomy">
           </div>
           <div class="item-5">
-            <img src="./assets/image/running1.jpg" alt="Running">
+            <img id="running" src="./assets/image/running1.jpg" alt="Running">
           </div>
           <div class="item-6">
-            <img src="./assets/image/surfing.jpg" alt="Surfing">
+            <img id="surfing" src="./assets/image/surfing.jpg" alt="Surfing">
           </div>
         </div>
       </div>
     </section>
+
+    <div class="has-text-centered"><p>If you are interested in learning a new hobby, you can click on one of the images above, search for one that interests you, select an option from our dropdown menu, or choose a hobby at random.</p></div>
     <!-- Input form with search button attached -->
     <div class="block">
       <form id="searchForm">
@@ -68,6 +71,8 @@
           </form>
         </div>
         <!-- Dropdown with basic hobbies -->
+        <div class="columns">
+          <div class = "column">
         <div class="field">
           <label class="label">Hobbies</label>
           <p class="control">
@@ -88,6 +93,7 @@
     <!--Random Hobby button-->
     <div class="buttons" id="random">
     <button class="button is-info">Random Hobby</button>
+    </div>
     </div>
     </div>
     <!-- Wiki content will go here -->
