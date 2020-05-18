@@ -1,30 +1,25 @@
 var hobby = "";
 
-$("#hobbyDropdown").on("change", function(){
-    
-    var hobbyName = $(this).find("option:selected").text()
+$("#hobbyDropdown").on("change", function () {
+  var hobbyName = $(this).find("option:selected").text();
 
-    if (hobbyName === "Select") {
-        var hobbyName = "Hobby"
-        
-    } 
-    
-    wikiData(hobbyName)
-})
+  if (hobbyName === "Select") {
+    var hobbyName = "Hobby";
+  }
 
-$("#searchForm").on("submit", function(event) {
-    event.preventDefault()
-    var hobbyName = $("#hobbySearchInput").val()
+  wikiData(hobbyName);
+});
 
-    if (hobbyName !== null) {
-        
-        wikiData(hobbyName)
-    }
+$("#searchForm").on("submit", function (event) {
+  event.preventDefault();
+  var hobbyName = $("#hobbySearchInput").val();
 
-    $("#hobbySearchInput").empty()
-})
+  if (hobbyName !== null) {
+    wikiData(hobbyName);
+  }
 
-
+  $("#hobbySearchInput").empty();
+});
 
 var queryURL =
   "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=info%7Cextracts&redirects=1&inprop=url&exintro=1&explaintext=1&titles=";
@@ -37,12 +32,11 @@ function wikiData(hobbyName) {
     url: queryURL + hobbyName + "&origin=*",
     method: "GET",
   }).then(function (result) {
-
     var pageNum = Object.keys(result.query.pages);
     var summaryText = result.query.pages[pageNum[0]].extract;
     var pageLink = result.query.pages[pageNum[0]].canonicalurl;
     $("#wikiLink").attr("href", pageLink);
-    $("#hobbyName").text(hobbyName)
+    $("#hobbyName").text(hobbyName);
     $("#summaryText").text(summaryText);
   });
 }
