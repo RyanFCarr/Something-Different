@@ -1,5 +1,36 @@
 var hobby = "";
 
+$("#biking").on("click", function(){
+  var hobbyName = ("Mountain Biking");
+  wikiData(hobbyName)
+})
+
+$("#fishing").on("click", function(){
+  var hobbyName = ("Fishing");
+  wikiData(hobbyName)
+})
+
+$("#boardgames").on("click", function(){
+  var hobbyName = ("Board Games");
+  wikiData(hobbyName)
+})
+
+$("#astronomy").on("click", function(){
+  var hobbyName = ("Astronomy");
+  wikiData(hobbyName)
+})
+
+$("#running").on("click", function(){
+  var hobbyName = ("Running");
+  wikiData(hobbyName)
+})
+
+$("#surfing").on("click", function(){
+  var hobbyName = ("Surfing");
+  wikiData(hobbyName)
+})
+
+
 $("#hobbyDropdown").on("change", function(){
     
     var hobbyName = $(this).find("option:selected").text()
