@@ -281,6 +281,8 @@ $("#randomBtn").click(function (event) {
   hobbiesArr = $.merge(genIndoor, genOutdoor);
     // Select a random entry on the hobbiesArr
   var hobbyName = hobbiesArr[Math.floor(Math.random() * hobbiesArr.length - 1)];
+  query = hobbyName;
     // Output the result to wikiData
   wikiData(hobbyName);
+  loadVideo();
 });

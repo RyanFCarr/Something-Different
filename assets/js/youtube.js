@@ -1,6 +1,7 @@
 
 //Define Vars
 const API = "";
+
 var query = "";
 var youLink = "http://youtube.com/watch?v=";
 var player;
@@ -61,6 +62,6 @@ function embedVideo(video) {
     window.player = new YT.Player('player', {
       videoId: video.id.videoId,
     });
-    $("#player").addClass("has-ratio")
+    $("#player").addClass("has-ratio").parent().addClass('image')
   }
 }
