@@ -2,7 +2,6 @@ var hobby = "";
 
 $("img").click(function(){
   hobbyName = $(this).attr("data-hobby")
-  console.log(this)
   wikiData(hobbyName)
 })
 
