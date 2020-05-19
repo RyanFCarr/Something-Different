@@ -15,10 +15,9 @@ body {
     padding-top: 1rem;
 }
 
-#dropTitle {
-    padding-right: 4.5rem;
-    padding-bottom: 1rem;
-}
+ #hobbyD {
+    margin-bottom: 0px;
+} 
 
 #mountainFav {
     padding-right: .5rem;

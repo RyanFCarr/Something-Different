@@ -62,8 +62,9 @@
     <br>
     <!-- Input form with search button attached -->
     <div class="block">
-      <div class="level">
-        <form id="searchForm" class="level-item">
+      <div class="columns is-mobile is-vcentered">
+        <div class="column has-text-centered">
+        <form id="searchForm">
           <div class="field has-addons">
             <form>
               <p class="control">
@@ -74,11 +75,12 @@
               </p>
             </form>
           </div>
+          </div>
           <!-- Dropdown with basic hobbies -->
-          <div class="field level-item" id="dropTitle">
+          <div class="column is-centered" id="dropTitle">
             <ul>
-              <li class="title is-4 has-text-centered">Hobbies</li>
-              <li class="control">
+              <li class="title is-4 has-text-centered" id="hobbyD">Hobbies</li>
+              <li class="control has-text-centered">
                 <span class="select">
                   <select id="hobbyDropdown">
                     <option>Select</option>
@@ -95,7 +97,7 @@
           </div>
         </form>
         <!--Random Hobby button-->
-        <div class="buttons level-item" id="random">
+        <div class="column has-text-right" id="random">
           <button id="randomBtn" class="button is-info">I'm feeling adventurous!</button>
         </div>
       </div>
