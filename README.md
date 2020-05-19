@@ -2,7 +2,7 @@
 
 An app which suggests and offers assistance to those who may be in search of a new hobby.
 
-![something-different-ss](https://user-images.githubusercontent.com/61035701/82154786-5209f500-983e-11ea-8afc-868d72381c2a.jpg)
+![something-different](https://user-images.githubusercontent.com/61035701/82362230-07bd7b00-99da-11ea-8501-aefa3d52176c.jpg)
 
 ## Motivation
 
